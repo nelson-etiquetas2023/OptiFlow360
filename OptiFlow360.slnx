@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Frontend/Frontend.csproj" />
+  <Project Path="Server/Server.csproj" Id="2b78a257-5afc-41af-b2fc-2ae6a538af00" />
+  <Project Path="Shared/Shared.csproj" Id="d81fe316-bab3-44be-9969-eee1dad7453a" />
+</Solution>

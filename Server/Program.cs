@@ -2,13 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using Server.Data;
 using Server.Service.Customers;
 using Server.Service.Products;
+using Server.Service.Supplier;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
-
-
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -21,6 +19,7 @@ builder.Services.AddDbContext<OptiFlowDbContext>(options =>
 
 builder.Services.AddScoped<IProductsService, ProductsService>();
 builder.Services.AddScoped<ICustomersService, CustomersServices>();
+builder.Services.AddScoped<ISuppliersService, SuppliersService>();
 
 var app = builder.Build();
 

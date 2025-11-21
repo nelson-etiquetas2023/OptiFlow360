@@ -7,7 +7,7 @@ namespace Server.Data
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<Customer> Clientes { get; set; }
-        public DbSet<Supplier> Proveedores { get; set; }
+        public DbSet<Proveedor> Proveedores { get; set; }
         public DbSet<Users> Users { get; set; }
 
         override protected void OnModelCreating(ModelBuilder modelBuilder)
